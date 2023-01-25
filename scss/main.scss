@@ -1,0 +1,94 @@
+
+@mixin flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{ 
+    @include flex-box();
+    background-color: beige;
+    height: 90vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Unbounded', cursive;
+    background-image: url("https://source.unsplash.com/random/?activities");
+   
+}
+
+.container{
+    
+    padding: 2.5em;
+    background-color: #346675e7;
+    width: 100%;
+    border-radius: 30px;
+    max-width: 300px;
+    margin: 1em;
+    
+
+    .select {
+       @include flex-box();
+        position: relative;
+        display: block;
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 4px;
+        margin-bottom: 10px;
+
+        
+        & select {
+
+            font-family: inherit;
+            outline: 0;
+            background: rgb(202, 209, 140);
+            background-image: none;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+        }
+        
+    }
+
+    .text-box {
+        @include flex-box();
+        height: 100%;
+        padding: 10px;
+        line-height: 2;
+        margin-bottom: 10px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        color: rgb(8, 8, 8);
+        background-color: rgb(202, 209, 140) ;
+    }
+
+    .btn-container {
+        @include flex-box();
+        height: 100%;
+        margin: 0;
+        
+        & #rand {
+            font-family: inherit;
+            padding: 10px;
+            background-color: rgb(202, 209, 140);
+            color: rgb(11, 11, 11);
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0px 15px 20px rgba(92, 98, 93, 0.2);
+            cursor: pointer;
+            
+
+            &:hover {
+                transition: 0.5s;
+                box-shadow: 0px 15px 20px rgba(231, 239, 76, 0.2);
+                background-color: rgb(44, 164, 92);
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+
+}
