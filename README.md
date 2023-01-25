@@ -1,1 +1,3 @@
-# Sass_stuff
+# Sass_stuff & Typescript
+
+Random Activities
