@@ -1,3 +1,3 @@
 # Sass_stuff & Typescript
 
-Random Activities
+A randomizer app where you choose a type of activity and get a random one.
